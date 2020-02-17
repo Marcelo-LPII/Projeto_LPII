@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		div.container{
+			text-align: center;
+			border-radius: 10px;
+			border: 5px solid black;
+			background-color: hsl(0,80%,40%);
+			width: 650px;		
+			padding: 50px 60px;
+			margin: auto;
+			height: 530px;
+
+		}
+		button{
+
+			transition-duration: 0.4s;
+			background-color: darkred;
+			padding: 10px 15px;
+			border: 2px solid black;
+			cursor: pointer;
+			border-radius: 10px;
+			font-size: 15px;
+			font-family: arial;
+
+		}
+		#botao{
+			color: white;
+		}
+		#botao:hover{
+            background-color: white;
+			color: red;
+			border: 2px solid red;
+	    }
+		label{
+
+			font-family: arial;
+		}
+		body{
+
+			background: url('Estante.jpg');
+		}
+		input{
+
+			width: 90%;
+			background-repeat: no-repeat;
+			padding: 13px 20px;
+			font-size: 15px;
+			font-family: arial;
+			border-radius: 10px;
+			border: 2px solid black;
+		}
+		input:focus{
+			border: 2px solid red;
+
+		}
+		div.navbar{
+			background-color: darkred;
+			border: 5px solid black;
+			border-radius: 10px;
+			padding: 10px 20px;
+			padding-top: 0;
+			margin: auto;
+		}
+		i{
+        	margin-right: 20px;
+        	font-size: 22px;
+        	margin-left: 2;
+        }
+	</style>
+	<title>Inicio</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="navbar" style="background-color: hsl(0,80%,40%); margin-left: 70px; margin-right: 70px;">
+		<br/>
+		<form>
+			<input type="text" name="pesquisa" placeholder="Pesquise por Livros, Revistas ou Filmes" style="margin-left: 10px;">
+			<button type="submit" id="botao" style="width: 60px; height: 50px; margin-left: 30px;"><i class="glyphicon glyphicon-search"></i></button>
+		</form>
+	</div>
+    <br/>        
+	<div class="container">
+			<div>
+				<b><label style="font-size: 100px">SISBI</label></b>
+			</div>
+	        <br/>
+			<div>
+				<b><label style="font-size: 30px">Sistema de Gerenciamento de Bibliotecas</label></b>
+			</div>
+			<br/>
+	        <br/>
+			<div>
+				<div>
+					<form action="Login.html"><button id="botao" type="submit" style="width: 250px; height: 50px;"><i class="glyphicon glyphicon-log-in"></i>Acessar Conta</button></form>
+				</div>
+				<br/>
+				<div>
+					<form action="Selecao Tipo Cadastro.html"><button id="botao" type="submit" style="width: 250px; height: 50px;"><i class="glyphicon glyphicon-plus"></i>Cadastrar-se</button></form>
+				</div>
+
+			</div>
+	</div>
+</body>
+</html>

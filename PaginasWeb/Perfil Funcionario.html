@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Funcionario</title>
+	<link rel="stylesheet" type="text/css" href="Sidenav.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <style type="text/css">
+    input{
+      width: 80%;
+      background-repeat: no-repeat;
+      padding: 10px 20px;
+      font-size: 15px;
+      font-family: arial;
+      border-radius: 5px;
+      border: 2px solid black;
+    }
+    input:focus{
+      border: 2px solid red;
+    }
+    button{
+
+      transition-duration: 0.4s;
+      background-color: darkred;
+      color: white;
+      width: 60px;
+      padding: 10px 15px;
+      border: 2px solid black;
+      cursor: pointer;
+      border-radius: 10px;
+      font-size: 15px;
+      font-family: arial;
+      margin-left: 15px;
+    }
+    button:hover{
+      background-color: white;
+      color: red;
+      border: 2px solid red;
+   }
+    label{
+      font-size: 20px;
+      font-family: arial;
+    }
+     body{
+      background: url('Estante.jpg');
+   }
+    i{
+      margin-right: 50px;
+      font-size: 22px;
+      margin-left: 2;
+   }
+    table{
+     border-collapse: collapse;
+     width: 100%;
+     font-family: arial;
+     margin-left: auto;
+     margin-right: auto;
+  }
+   tr:nth-child(even){
+     background-color: #f2f2f2;
+  }
+   th{
+     padding: 50px 100px;
+     text-align: center;
+     font-size: 35px;
+  }
+   tr{
+     padding: 50px 50px;
+     font-size: 20px;
+     text-align: left;
+     height: 40px;
+  }
+   select:hover{
+      background-color: darkred;
+      color: white;
+  }
+   select{
+      border-radius: 10px;
+      border: 2px solid black;
+  }
+</style>
+</head>
+
+<body>
+
+	<div class="sidenav" id="mySidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="margin-right: 20px;">&times;</a>
+		<a href="Perfil Funcionario.html"><i class="glyphicon glyphicon-user" style="color: black;"></i></a>
+		<a href="Emprestimo Funcionario.html"><i class="glyphicon glyphicon-plus"></i></a>
+        <a href="Consulta Status Emprestimo.html"><i class="glyphicon glyphicon-th-list"></i></a>
+        <a href="Cadastro Obras.html"><i class="glyphicon glyphicon-book"></i></a>
+		<a href="Editar Cadastro Funcionario.html"><i class="glyphicon glyphicon-paperclip"></i></a>
+		<a href="Editar Login Funcionario.html"><i class="glyphicon glyphicon-pencil"></i></a>
+		<a href="Login.html" id="logout"><i class="glyphicon glyphicon-log-out"></i></a>
+	</div>
+  <script type="text/javascript">
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "170px";
+        document.getElementById("main").style.marginLeft = "170px";
+        document.getElementById("main2").style.marginLeft = "170px";
+        document.getElementById("main3").style.marginLeft = "170px";
+        document.getElementById("main4").style.marginLeft = "170px";
+       }
+    function closeNav() {
+       document.getElementById("mySidenav").style.width = "50px";
+       document.getElementById("main").style.marginLeft= "70px";
+       document.getElementById("main2").style.marginLeft= "70px";
+       document.getElementById("main3").style.marginLeft = "70px";
+       document.getElementById("main4").style.marginLeft = "70px";
+      }
+  </script>
+
+	<div  id="main" style="background-color: hsl(0,80%,40%); color: black; border-radius: 10px; border: 2px solid black; padding: 50px 50px; height: 10px; margin-right: 50px; padding-top: 5px; padding-bottom: 55px;">
+	     <form action="">
+	     	<b><span style="font-size:30px;cursor:pointer; padding-top: 0; margin-right: 35px; color: white;" onclick="openNav()">&#9776;</span></b>
+	     		   <input type="text" name="Pesquisa" placeholder="Pesquise por Livros, Revistas ou Filmes">
+	         	 <button type="submit" style="width: 60px; height: 50px; margin-left: 50px;"><i class="glyphicon glyphicon-search"></i></button>
+	     </form>	
+	</div>
+	<div  id="main2" style="background-color: white;  color: black; border-radius: 10px; border: 2px solid red; padding: 10px 100px; height: 460px; margin-right: 50px;">
+    <table>
+          <tr>
+            <th>Marcelo Paulo Nascimento Melo</th>
+          </tr>
+          <tr>
+            <td>Usuário: </td>
+            <td> Funcionario</td>
+          </tr>
+          <tr>
+            <td>CPF: </td>
+            <td> 111.222.333.444-80</td>
+          </tr>
+          <tr>
+            <td>Rua: </td>
+            <td>Rua Paulo Afonso</td>
+          </tr>
+          <tr>
+            <td>Bairro: </td>
+            <td>BTN 3</td>
+          </tr>
+          <tr>
+            <td>Estado: </td>
+            <td>Bahia</td>
+          </tr>
+    </table>
+   </div>
+   <div id="main3" style="background-color: hsl(0,80%,40%);  color: white; border-radius: 10px; border: 2px solid black; padding: 20px 60px; height: 65px; margin-right: 50px;">
+   	<label>OBRA </label>
+   	<select style="padding-top: 0; margin-left: 200px; width: 150px; font-family: arial; font-size: 15px; color: black; height: 30px;">
+   		<option>TIPO DE OBRA</option>
+   		<option>FILME</option>
+   		<option>LIVRO</option>
+   		<option>REVISTA</option>
+   	</select>
+   	<select style=" padding-top: 0; margin-left: 100px; width: 420px; font-family: arial; font-size: 15px; color: black; height: 30px;">
+   		<option>TITULO DA OBRA</option>
+   		<option>A MUMIA</option>
+   		<option>DOM CASMURRO</option>
+   		<option>VEJA</option>
+   	</select>
+   	 	
+   </div>
+   <div id="main4" style="background-color: hsl(0,80%,40%);  color: white; border-radius: 10px; border: 2px solid black; padding: 20px 60px; height: 65px; margin-right: 50px;">
+   	     <label>DEVOLUÇÃO </label>
+   	 	
+   </div>
+</body>
+</html>

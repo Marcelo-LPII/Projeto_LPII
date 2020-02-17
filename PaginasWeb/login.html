@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		div.container{
+			text-align: center;
+			border-radius: 10px;
+			border: 5px solid black;
+			padding: 10px 45px;
+			background-color: hsl(0,80%,40%);
+			margin: auto;
+			width: 550px;
+			height: 470px;
+		}
+		input{
+
+			width: 300px;
+			padding: 15px 20px;
+			font-family: arial;
+			font-size: 15px;
+			border-radius: 10px;
+			border: 2px solid black;
+		}
+
+		input:focus{
+
+			border: 2px solid red;
+		}
+		
+		#botao{
+			border: 2px solid black;
+			background-color: darkred;
+			color: white;
+			border-radius: 10px;
+			padding: 10px 15px;
+			width: 150px;
+			cursor:pointer;
+			transition-duration: 0.4s;
+			font-size: 15px;
+			font-family: arial; 
+		}
+		#botao:hover{
+			background-color: white;
+			color: red;
+			border: 2px solid red;
+		}
+		body{
+
+			background: url('Estante.jpg');
+		}
+		i{
+        	margin-right: 20px;
+        	font-size: 20px;
+        	margin-left: 2;
+        }
+	</style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<title>Login</title>
+</head>
+<body>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div class="container">
+		<form>
+			<div>
+				<br/>
+				<br/>
+				<div>
+					<b><label style="font-family: arial; font-size: 50px;">SISBI</label></b>
+			   </div>
+			   <br/>
+			   <div>
+			   	   <b><label style="font-family: arial; font-size: 25px;">Faça Login em sua Conta</label></b>
+			   </div>
+				<br/>
+				<br/>
+				<div>
+				    <i class="glyphicon glyphicon-user"></i> 
+					<input type="text" name="Usuário" placeholder="Nome de Usuario">
+				</div>
+			</div>
+			<br/>
+			<div>
+				<div>
+					<i class="glyphicon glyphicon-pencil"></i>
+					<input type="password" name="Senha" placeholder="Digite sua Senha">
+				</div>
+			</div>
+	        <br/>
+	        <br/>
+			<div>
+				<div align="center">
+					<button type="submit" id="botao"><i class="glyphicon glyphicon-log-in"></i>Entrar</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Editar Cadastro</title>
+	<link rel="stylesheet" type="text/css" href="Sidenav.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style type="text/css">
+	input{
+
+		width: 80%;
+		background-repeat: no-repeat;
+		padding: 10px 20px;
+		font-size: 15px;
+		font-family: arial;
+		border-radius: 5px;
+		border: 2px solid black;
+	}
+	 input:focus{
+		border: 2px solid red;
+    }
+    button{
+
+    transition-duration: 0.4s;
+	  background-color: darkred;
+	  color: white;
+	  width: 60px;
+	  padding: 10px 15px;
+	  border: 2px solid black;
+	  cursor: pointer;
+	  border-radius: 10px;
+	  font-size: 15px;
+	  font-family: arial;
+	  margin-left: 15px;
+    }
+     button:hover{
+        background-color: white;
+        color: red;
+        border: 2px solid red;
+     }
+      #botao{
+          color: white;
+          border: 2px solid black;
+          background-color: darkred;
+      }
+       #botao:hover{
+          color: red;
+          border: 2px solid red;
+          background-color: white;
+      }
+     label{
+        font-size: 18px;
+        font-family: arial;
+        margin-left: 50px;
+     }
+     body{
+        background: url('Estante.jpg');
+     }
+     i{
+        margin-right: 10px;
+        font-size: 22px;
+        margin-left: 2px;
+      }
+      select{
+          border-radius: 10px;
+          border: 2px solid black;
+          margin-left: 50px;
+          height: 30px;
+      }
+     select:hover{
+          border: 2px solid red;
+      }
+	</style>
+</head>
+<body>
+
+	<div class="sidenav" id="mySidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="margin-right: 20px;">&times;</a>
+		<a href="Perfil Funcionario.html"><i class="glyphicon glyphicon-user" style="color: black;"></i></a>
+		<a href="Emprestimo Funcionario.html"><i class="glyphicon glyphicon-plus"></i></a>
+    <a href="Consulta Status Emprestimo.html"><i class="glyphicon glyphicon-th-list"></i></a>
+    <a href="Cadastro Obras.html"><i class="glyphicon glyphicon-book"></i></a>
+		<a href="Editar Cadastro Funcionario.html"><i class="glyphicon glyphicon-paperclip"></i></a>
+		<a href="Editar Login Funcionario.html"><i class="glyphicon glyphicon-pencil"></i></a>
+		<a href="Login.html" id="logout"><i class="glyphicon glyphicon-log-out"></i></a>
+	</div>
+  <script type="text/javascript">
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "170px";
+        document.getElementById("main").style.marginLeft = "170px";
+        document.getElementById("main2").style.marginLeft = "170px";
+        document.getElementById("main3").style.marginLeft = "170px";
+        document.getElementById("main4").style.marginLeft = "170px";
+       }
+    function closeNav() {
+       document.getElementById("mySidenav").style.width = "50px";
+       document.getElementById("main").style.marginLeft= "70px";
+       document.getElementById("main2").style.marginLeft= "70px";
+       document.getElementById("main3").style.marginLeft = "70px";
+       document.getElementById("main4").style.marginLeft = "70px";
+      }
+  </script>
+
+	<div  id="main" style="background-color: hsl(0,80%,40%); color: black; border-radius: 10px; border: 2px solid black; padding: 50px 50px; height: 10px; margin-right: 50px; padding-top: 5px; padding-bottom: 55px;">
+	     <form action="">
+	     	<b><span style="font-size:30px;cursor:pointer; padding-top: 0; margin-right: 35px;" onclick="openNav()">&#9776;</span></b>
+	     		 <input type="text" name="Pesquisa" placeholder="Pesquise por Livros, Revistas ou Filmes">
+	         	 <button type="submit" style="width: 60px; height: 50px; margin-left: 50px;"><i class="glyphicon glyphicon-search"></i></button>
+	     </form>	
+	</div>
+	<div  id="main2" style="background-color: white;  color: black; border-radius: 10px; border: 2px solid red; padding: 50px 100px; height: 1350px; margin-right: 50px;">
+    <form action="">
+      <div>
+        <b><label class="topo" style="font-size: 25px; margin-left: 400px;">Dados Pessoais</label></b>
+      </div>
+      <br/>
+      <br/>
+      <br/>
+      <div>
+        <label>Nome Completo: </label>
+        <input type="text" name="nomecompleto" placeholder="Digite o Nome Completo" style="margin-left: 30px; width: 600px;">
+      </div>
+      <br/>
+      <br/>
+      <div>
+        <label style="text-align: left;">CPF: </label>
+        <input type="text" name="cpf" placeholder="Digite o CPF" style="width: 300px; margin-right: 270px; margin-left: 130px;">
+      </div>
+      <br/>
+      <br/>
+      <div>
+        <label>RG: </label>
+        <input type="text" name="rg" placeholder="Digite o RG" style="width: 300px; margin-right: 270px; margin-left: 135px;">
+      </div>
+      <br/>
+      <br/>
+      <div>
+        <label>Data de Nascimento: </label>
+        <select style="width: 70px; margin-left: 50px;">
+          <option>DIA</option>
+          <option>01</option>
+          <option>02</option>
+          <option>03</option>
+          <option>04</option>
+          <option>05</option>
+          <option>06</option>
+          <option>07</option>
+          <option>08</option>
+          <option>09</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
+          <option>15</option>
+          <option>16</option>
+          <option>17</option>
+          <option>18</option>
+          <option>19</option>
+          <option>20</option>
+          <option>21</option>
+          <option>22</option>
+          <option>23</option>
+          <option>24</option>
+          <option>25</option>
+          <option>26</option>
+          <option>27</option>
+          <option>28</option>
+          <option>29</option>
+          <option>30</option>
+          <option>31</option>
+        </select>
+        <select style="width: 160px; margin-left: 120px;">
+          <option>MES</option>
+          <option>Janeiro</option>
+          <option>Fevereiro</option>
+          <option>Março</option>
+          <option>Abril</option>
+          <option>Maio</option>
+          <option>Junho</option>
+          <option>Julho</option>
+          <option>Agosto</option>
+          <option>Setembro</option>
+          <option>Outubro</option>
+          <option>Novembro</option>
+          <option>Dezembro</option>
+        </select>
+        <select style="width: 120px; margin-left: 130px;">
+          <option>ANO</option>
+          <option>1990</option>
+          <option>1991</option>
+          <option>1992</option>
+          <option>1993</option>
+          <option>1994</option>
+          <option>1995</option>
+          <option>1996</option>
+          <option>1997</option>
+          <option>1998</option>
+          <option>1999</option>
+          <option>2000</option>
+        </select>
+      </div>
+      <br/>
+      <br/>
+      <br/>
+      <div>
+        <b><label class="topo" style="font-size: 25px; margin-left: 400px;">Dados Residenciais</label></b>
+      </div>
+      <br/>
+      <br/>
+      <br/>
+      <div>
+        <label>Rua: </label>
+        <input type="text" name="rua" placeholder="Digite o Nome da Rua" style="margin-left: 115px; width: 600px;">
+      </div>
+      <br/>
+      <br/>
+      <div>
+        <label>Bairro: </label>
+        <input type="text" name="bairro" placeholder="Digite o Nome do Bairro" style="margin-left: 100px; width: 600px;">
+      </div>
+      <br/>
+      <br/>
+      <div>
+        <label style="margin-right: 50px;">CEP: </label>
+        <input type="text" name="cep" placeholder="Digite o CEP" style="width: 300px; margin-right: 270px; margin-left: 70px;">
+      </div>
+      <br/>
+      <br/>
+      <div>
+        <label style="margin-right: 50px;">Cidade: </label>
+        <input type="text" name="cidade" placeholder="Digite o Nome da Cidade" style="width: 300px; margin-right: 270px; margin-left: 50px;">
+      </div>
+      <br/>
+      <br/>
+      <div>
+        <label style="margin-right: 50px;">Estado: </label>
+        <input type="text" name="estado" placeholder="Digite o Nome do Estado" style="width: 300px; margin-right: 270px; margin-left: 50px;">
+      </div>
+      <br/>
+      <br/>
+      <br/>
+      <div>
+        <b><label style="font-size: 25px; margin-left: 400px;">Dados Profissionais</label></b>
+      </div>
+      <br/>
+      <br/>
+      <br/>
+      <div>
+        <label style=" margin-left: 160px;">Cargo: </label>
+        <select style="width: 200px; margin-left: 10px;">
+          <option></option>
+          <option>Bibliotecario(a)</option>
+        </select>
+        <label style="margin-left: 160px;">Salario: </label>
+        <select style="width: 150px; margin-left: 10px;">
+          <option></option>
+          <option>R$ 3200,00</option>
+        </select>
+      </div>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <div>
+        <button type="submit" id="botao" style="width: 200px; margin-left: 400px;" ><i class="glyphicon glyphicon-ok-circle" ></i>Confirmar</button>
+      </div>
+    </form>
+   </div>
+</body>
+</html>

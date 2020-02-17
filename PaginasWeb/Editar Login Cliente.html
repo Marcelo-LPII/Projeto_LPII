@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Editar Login</title>
+	<link rel="stylesheet" type="text/css" href="Sidenav.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style type="text/css">
+		input{
+
+			width: 80%;
+			background-repeat: no-repeat;
+			padding: 10px 20px;
+			font-size: 15px;
+			font-family: arial;
+			border-radius: 5px;
+			border: 2px solid black;
+		}
+		input:focus{
+			border: 2px solid red;
+    }
+    button{
+
+      transition-duration: 0.4s;
+			background-color: darkred;
+			color: white;
+			width: 150px;
+			padding: 10px 15px;
+			border: 2px solid black;
+			cursor: pointer;
+			border-radius: 10px;
+			font-size: 15px;
+			font-family: arial;
+			margin-left: 400px;
+    }
+     button:hover{
+        	background-color: white;
+        	color: red;
+          border: 2px solid red;
+    }
+     #botao{
+          color: white;
+          border: 2px solid black;
+          background-color: darkred;
+    }
+     #botao:hover{
+          color: red;
+          border: 2px solid red;
+          background-color: white;
+     }
+     label{
+            margin-left: 300px;
+        	  font-size: 25px;
+        	  font-family: arial;
+    }
+     body{
+        	background: url('Estante.jpg');
+    }
+     i{
+        margin-right: 10px;
+        font-size: 22px;
+        margin-left: 2px;
+    }
+    #gliphy {
+      	margin-left: 200px;
+        margin-right: 0;
+    }
+</style>
+</head>
+<body>
+
+	<div class="sidenav" id="mySidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="margin-right: 20px;">&times;</a>
+		<a href="Perfil Cliente.html"><i class="glyphicon glyphicon-user" style="color: black;"></i></a>
+		<a href="Emprestimo Cliente.html"><i class="glyphicon glyphicon-plus"></i></a>
+		<a href="Editar Cadastro Cliente.html"><i class="glyphicon glyphicon-paperclip"></i></a>
+		<a href="Editar Login Cliente.html"><i class="glyphicon glyphicon-pencil"></i></a>
+		<a href="Login.html" id="logout"><i class="glyphicon glyphicon-log-out"></i></a>
+	</div>
+  <script type="text/javascript">
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "170px";
+        document.getElementById("main").style.marginLeft = "170px";
+        document.getElementById("main2").style.marginLeft = "170px";
+        document.getElementById("main3").style.marginLeft = "170px";
+        document.getElementById("main4").style.marginLeft = "170px";
+       }
+    function closeNav() {
+       document.getElementById("mySidenav").style.width = "50px";
+       document.getElementById("main").style.marginLeft= "70px";
+       document.getElementById("main2").style.marginLeft= "70px";
+       document.getElementById("main3").style.marginLeft = "70px";
+       document.getElementById("main4").style.marginLeft = "70px";
+      }
+  </script>
+
+	<div  id="main" style="background-color: hsl(0,80%,40%); color: black; border-radius: 10px; border: 2px solid black; padding: 50px 50px; height: 10px; margin-right: 50px; padding-top: 5px; padding-bottom: 55px;">
+	     <form action="">
+	     	<b><span style="font-size:30px;cursor:pointer; padding-top: 0; margin-right: 35px;" onclick="openNav()">&#9776;</span></b>
+	     		 <input type="text" name="Pesquisa" placeholder="Pesquise por Livros, Revistas ou Filmes">
+	         	 <button type="submit" style="width: 60px; height: 50px; margin-left: 50px;"><i class="glyphicon glyphicon-search"></i></button>
+	     </form>	
+	</div>
+	<div  id="main2" style="background-color: white;  color: black; border-radius: 10px; border: 2px solid red; padding: 50px 100px; height:600px; margin-right: 50px;">
+      <div>
+        <label style="font-family: arial; font-size: 50px; margin-left: 420px;">SISBI</label>
+      </div>
+      <br/>
+      <label>Edite aqui seus Dados de Login</label>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <form>
+        <div>
+        	  <i class=" glyphicon glyphicon-user" id="gliphy"></i>
+            <input type="text" name="Usuário" placeholder="Digite um novo nome de Usuario" style="width: 40%; margin-left: 60px;">
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <div>
+           <i class=" glyphicon glyphicon-pencil" id="gliphy"></i>
+           <input type="password" name="Senha" placeholder="Digite uma nova Senha" style="width: 40%; margin-left: 60px;">
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div>
+          <button type="submit" id="botao" class="Entrar"><i class=" glyphicon glyphicon-ok-circle"></i>Confirmar</button>
+        </div>
+      </form>
+   </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Finalizar Cadastro</title>
+	<style type="text/css">
+		div.container{
+			text-align: center;
+			background-color: hsl(0, 80%, 40%);
+		    width: 50%;
+			border-radius: 10px;
+			border: 5px solid black;
+			padding: 3%;
+			margin: auto;
+
+		}
+		input{
+
+			width: 55%;
+			padding: 15px 20px;
+			border-radius: 10px;
+			border: 2px solid black;
+			font-size: 15px;
+			font-family: arial;
+
+		}
+
+		input:focus{
+
+			border: 2px solid red;
+		}
+		
+		#botao{
+			border: 2px solid black;
+			background-color: white;
+			font-family: arial;
+			font-size: 15px;
+			color: white;
+			background-color: darkred;
+			border-radius: 10px;
+			padding: 10px 15px;
+			width: 200px;
+			cursor: pointer;
+			transition-duration: 0.4s;
+		}
+		#botao:hover{
+			border: 2px solid red;
+			background-color: white;
+			color: red;
+		}
+		i{
+        	margin-left: 2px;
+        	margin-right: 20px;
+        	font-size: 22px;
+        }
+		body{
+
+			background: url('Estante.jpg');
+		}
+	</style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+    <br/>
+	<div class="container">
+		<form>
+			<div>
+				<b><label style="font-family: arial; font-size: 30px;">Finalize seu Cadastro no SISBI</label></b>
+			</div>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<div> 
+				<i class="glyphicon glyphicon-user" style="margin-left: -20px;"></i>
+				<input type="text" name="Usuário" placeholder="Crie um Nome de Usuario" style="margin-left: 15px;">
+			</div>
+			<br/>
+			<br/>
+			<div>
+				<i class="glyphicon glyphicon-pencil" style="margin-left: -20px;"></i>
+				<input type="password" name="Senha" placeholder="Crie sua Senha" style="margin-left: 15px;">
+			</div>
+	        <br/>
+	        <br/>
+	        <br/>
+		    <div align="center">
+					<button type="submit" id="botao"><i class="glyphicon glyphicon-ok-circle" ></i>Confirmar</button>
+		    </div>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+.sidenav {
+  height: 100%; 
+  width: 200px;
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color: hsl(0,80%,40%); 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s;
+  
+}
+.sidenav a {
+  padding: 10px 15px;
+  text-decoration: none;
+  list-style-type: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: arial;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  background-color: darkred;
+  color: black;
+}
+#logout:hover{
+  color: red;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+span{
+	color: white;
+}
+
+#main{
+
+  transition: margin-left .5s;
+  padding: 16px;
+  margin: auto;
+}
+#main2{
+
+  transition: margin-left .5s;
+  padding: 16px;
+  margin: auto;
+}
+#main3{
+    transition: margin-left .5s;
+    padding: 16px;
+    margin: auto;
+}
+#main4{
+    transition: margin-left .5s;
+    padding: 16px;
+    margin: auto;
+}
+
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
